@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive CV using Html & CSS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins: 200, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+ body
+ {
+   background-color: rgba(53, 53, 53, 0.639);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+ }  
+ .container
+ {
+    position:relative;
+    width:100%;
+    margin:50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+ }
+ .container .left_side
+ {
+    position: relative;
+    background:#000000;
+    padding:40px;
+ }
+ .profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+ }
+ .profileText .imgBx
+ {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+ }
+ .profileText .imgBx img
+ {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .profileText h2
+ {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText span
+{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.title
+{
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 1px;
+ margin-bottom: 20px;
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li 
+{
+position: relative;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(255, 187, 0);
+}
+.contactInfo ul li span
+{
+color: #fff;
+font-weight: 300;
+
+}
+.contactInfo.education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5
+{
+    color: rgb(255, 187, 0);
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight:500;
+}
+.contactInfo.education h4
+{
+    color: #fff;
+    font-weight:300;
+}
+ .container .right_side
+ {
+    position: relative;
+    background:#ffffff;
+    padding:40px;
+ }
+ .about
+ {
+    margin-bottom: 50px;
+ }
+ .about:last-child
+ {
+    margin-bottom: 0;
+ }
+ .title2
+ {
+    color:#0081bd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+ }
+ p{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ .skills li
+ {
+   margin-bottom: 15px;
+
+ }
+ .hobbies li
+ {
+    margin-bottom: 15px;
+ }
+ .Languages li
+ {
+    margin-bottom: 15px;
+ }
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="https://cdn.glitch.global/5fa6b158-37f0-4f2b-b900-f95417be83fe/graduation-university-avatar-309191716565336qgmtxlsggm.webp?v=1719908205936" width="225">
+                </div>
+                <h2> Akshay Sitaram sainam<br><span>STUDENT</span></h2>
+                </div>
+            <div class="contactInfo">
+                <h3 class="title">Contact Details<br></h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                        <span class="text">+91 6281738371</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">23PA1A04E5@vishnu.edu.in</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/in/akshay-s-47a5012a0</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Bhimavaram,Andhra Pradesh, India</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contactInfo education">
+                <h3 class="title">Education<br></h3>
+                <ul>
+                    <li>
+                        <h5>2023-2024</h5>
+                        <h4>BTECH Ist year in ECE</h4>
+                        <h4>Vishnu Institute of Technology</h4>
+                       </li> 
+                       <li>
+                        <h5>2021-2023</h5>
+                        <h4>Intermediate in M.P.C</h4>
+                        <h4>Sri Chaitanya Boys Jr College</h4>
+                       </li>
+                       <li>
+                        <h5>2020-2021</h5>
+                        <h4>Secondary Education(10th Class)</h4>
+                        <h4>Sri Chaitanya Techno School</h4>
+                       </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>I am Akshay, i am currently pursuing Bachelors in Technology in Vishnu Institute of Technology, Bhimavaram, AP</p>
+              </div>
+              <div class="about">
+                <h2 class="title2">Experience</h2>
+                <p>Participated in a 24hrs HACKATHON.(FAILATHON)</p>
+                <p style="color: red;">Currently, I am a Student.</p>
+               </div> 
+                <div class="about skills">
+                    <h2 class="title2">Professional Skills</h2>
+                    <ul>
+                        <li>
+                            HTML
+                        </li>
+                        <li>Photoshop</li>
+                        <li>C language</li>
+                    </ul>
+                
+                </div>
+                <div class="about hobbies">
+                    <h2 class="title2">Hobbies</h2>
+                    <ul>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i>  Gaming</li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i>  Reading</li>
+                        <li><i class="fa fa-headphones" aria-hidden="true"></i>  Listening to music</li>
+                
+                    </ul>
+                </div>
+                <div class="about Languages">
+                    <h2 class="title2">Languages</h2>
+                    <ul>
+                        
+                        <li>English</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+                </div>
+                
+           
+        
+
+    </div>
+
+</body>
+</html>
